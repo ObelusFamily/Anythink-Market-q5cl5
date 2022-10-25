@@ -9,5 +9,24 @@ Please find more info about each part in the relevant Readme file ([frontend](fr
 When implementing a new feature or fixing a bug, please create a new pull request against `main` from a feature/bug branch and add `@vanessa-cooper` as reviewer.
 
 ## First setup
+### 1. Clone reporosity
+``` cmd
+git clone https://github.com/ObelusFamily/Anythink-Market-q5cl5.git
+```
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+### 2. [Get Docker](https://docs.docker.com/get-docker/)
+
+### 3. Stop mongodb if it is being used
+``` cmd
+sudo service mongod status
+sudo service mongod stop
+```
+
+### 4. Docker up
+``` cmd
+docker compose up
+```
+
+### 5. Test by [visiting ping](http://localhost:3000/api/ping)
+
+### 6. [Create a new user](http://localhost:3001/register)
